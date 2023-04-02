@@ -1,0 +1,161 @@
+:root {
+  --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+  --Soft-red: hsl(14, 88%, 65%);
+  /* Background gradient: */
+  --Soft-violet: hsl(273, 75%, 66%);
+  --Soft-blue: hsl(240, 73%, 65%);
+  /* Text */
+  --Very-dark-grayish-blue: hsl(237, 12%, 33%);
+  --Dark-grayish-blue: hsl(240, 6%, 50%);
+  /* Dividers */
+  --Lightgrayish-blue: hsl(240, 5%, 91%);
+}
+
+body {
+  background-image: linear-gradient(
+    to top,
+    var(--Soft-blue),
+    var(--Soft-violet)
+  );
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Kumbh Sans", sans-serif;
+}
+main {
+  background-color: white;
+  padding: 70px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./images/bg-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 82%;
+  background-position: -233% 80%;
+}
+@media (max-width: 950px) {
+  main {
+    width: 350px;
+    flex-direction: column;
+    background-image: url(./images/bg-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 65%;
+    background-position: 50% 0%;
+    padding: 0;
+    padding-bottom: 30px;
+    padding-top: 80px;
+    position: absolute;
+    top: 20%;
+  }
+}
+.image {
+  position: relative;
+}
+.image div {
+  overflow: hidden;
+  position: relative;
+  width: 405px;
+  height: 400px;
+  left: -70px;
+}
+.image div .womanDes {
+  position: absolute;
+  left: -70px;
+}
+@media (max-width: 950px) {
+  .image {
+    width: 100%;
+    height: 0;
+  }
+  .image div {
+    position: relative;
+    top: -190px;
+    left: 53px;
+    width: 70%;
+    height: 188px;
+  }
+}
+.image div .womanMo {
+  display: none;
+}
+@media (max-width: 950px) {
+  .image div .womanDes {
+    display: none;
+  }
+  .image div .womanMo {
+    display: flex;
+  }
+}
+.image .box {
+  position: absolute;
+  bottom: 21%;
+  left: -46%;
+}
+@media (max-width: 950px) {
+  .image .box {
+    display: none;
+  }
+}
+section {
+  width: 400px;
+  color: var(--Very-dark-grayish-blue);
+}
+@media (max-width: 950px) {
+  section {
+    width: 318px;
+  }
+}
+section h1 {
+  font-size: 40px;
+  color: var(--Very-dark-desaturated-blue);
+}
+@media (max-width: 950px) {
+  section h1 {
+    text-align: center;
+  }
+}
+section .faq {
+}
+section .faq div {
+  border-bottom: 1px solid var(--Lightgrayish-blue);
+}
+section .faq div .question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 17px;
+}
+section .faq div .question:hover {
+  color: var(--Soft-red) !important;
+  cursor: pointer;
+}
+section .faq div .question .arrow {
+  margin-right: 15px;
+}
+section .faq div .ans {
+  display: none;
+  color: var(--Dark-grayish-blue);
+}
+section .faq div .quesActive {
+  color: var(--Very-dark-desaturated-blue);
+  font-weight: bold;
+}
+section .faq div .active {
+  display: flex;
+}
+.attribution {
+  position: absolute;
+  bottom: 15px;
+  font-size: 11px;
+  text-align: center;
+  color: var(--Soft-red);
+  z-index: -1;
+}
+.attribution a {
+  color: white;
+}
