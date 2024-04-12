@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here]([https://your-live-site-url.com](https://minalfatih.github.io/FAQ-Accordion-Card/))
+- Live Site URL: [https://minalfatih.github.io/FAQ-Accordion-Card/]
 
 ## My process
 
